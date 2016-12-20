@@ -1,5 +1,16 @@
+var square = 1;
+
+var findSquare = function(message) {
+  if (square * square < message.length) {
+    square += 1;
+    findSquare(message);
+  }
+  return square;
+}
+
 var encryptMessage = function(message) {
-  return message.replace(/[ .,?!;:]/g, '').toLowerCase();
+  var noPunctuation = message.replace(/[ .,?!;:]/g, '').toLowerCase();
+  return findSquare(noPunctuation);
 }
 
 $(document).ready(function() {
