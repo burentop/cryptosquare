@@ -1,39 +1,28 @@
-# _roman-numerals_
+# _cryptosquare_
 
-#### _Simple web page to turn numbers into roman numerals, 12.20.2016_
+#### _Simple web page to encrypt a phrase, 12.20.2016_
 
 #### By _**Brent Perry**_
 
 ## Description
 
-_This is a very simple website used to convert numbers to roman numerals._
+_This is a very simple website used to encrypt a message using cryptosquare._
 
 # Specs
 
-* _Return number using only 'i'._
-  * _Input Example: 6_
-  * _Output Example: iiiiii_
-* _Return number when exact match is submitted._
-  * _Input Example: 5_
-  * _Output Example: v_
-  * _Input Example: 10_
-  * _Output Example: x_
-* _Return number, ignoring 3-in-a-row rule._
-  * _Input Example: 4_
-  * _Output Example: iiii_
-  * _Input Example: 9_
-  * _Output Example: iiiiiiiii_
-* _Return number using largest divisor._
-  * _Input Example: 6_
-  * _Output Example: vi_
-  * _Input Example: 19_
-  * _Output Example: xiiiiiiiii_ 
-* _Return number using prefix subtraction, but ignoring tens/hundreds/etc._
-  * _Input Example: 99_
-  * _Output Example: ic_
-* _Return proper number._
-  * _Input Example: 99_
-  * _Output Example: xcix_
+* _Return the message with all punctuation removed._
+  * _Input Example: Why, hello there._
+  * _Output Example: whyhellothere_
+* _Return the correct square size of the message._
+  * _Input Example: Why, hello there._
+  * _Output Example: 4_
+* _Return the correct array of arrays._
+  * _Input Example: Why, hello there._
+  * _Output Example: [[whyh], [ello], [ther], [e]]_
+* _Return encrypted phrase._
+  * _Input Example: Why, hello there._
+  * _Output Example: weteh lhyle hor_
+
 
 ## Setup/Installation Requirements
 
@@ -49,7 +38,7 @@ _Feel free to add to the site design._
 
 ## Technologies Used
 
-_HTML, CSS, Bootstrap, jQuery, git and GitHub._
+_HTML, CSS, Bootstrap, Javascript, jQuery, git and GitHub._
 
 ### License
 
