@@ -1,4 +1,5 @@
 var square = 1;
+var arrays = [];
 
 var findSquare = function(message) {
   if (square * square < message.length) {
@@ -8,9 +9,20 @@ var findSquare = function(message) {
   return square;
 }
 
+var makeArrays = function(message, squareSize) {
+  for (var index = 0; index < squareSize; index += 1) {
+    arrays[index] = "";
+    for (var index2 = index; index2 < message.length; index2 += squareSize) {
+      arrays[index] += message[index2];
+    }
+  }
+  return arrays;
+}
+
 var encryptMessage = function(message) {
   var noPunctuation = message.replace(/[ .,?!;:]/g, '').toLowerCase();
-  return findSquare(noPunctuation);
+  squareSize = findSquare(noPunctuation);
+  return makeArrays(noPunctuation, squareSize);
 }
 
 $(document).ready(function() {
