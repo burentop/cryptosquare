@@ -5,22 +5,22 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Roman Numerals</title>
+    <title>Cryptosquare</title>
   </head>
   <body>
     <div class="container">
-      <h1>Convert a number to a roman numeral:</h1>
-      <form id="roman">
+      <h1>Encrypt a message using cryptosquare:</h1>
+      <form id="ecryption">
         <div class="form-group">
-          <label for="number">Number to be converted:</label>
-          <input id="number" type="text">
+          <label for="message">Message to be encrypted:</label>
+          <input id="message" class ="form-control" type="text">
         </div>
-        <button type="submit" class="btn">Convert</button>
+        <button type="submit" class="btn">Encrypt</button>
       </form>
 
       <div id="result">
-        <h2><span id="output-original"></span> in roman numerals is:</h2>
-        <h2 id="output-roman"></h2>
+        <h2><span id="output-original"></span> encrypted is:</h2>
+        <h2 id="output-encrypted"></h2>
       </div>
     </div>
   </body>
